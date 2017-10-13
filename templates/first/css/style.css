@@ -1,0 +1,29 @@
+.nav-links li{
+	display: inline;
+	padding-right: 30px;
+}
+.dropdown{
+	color: white;
+	display: inline;
+	background-image: linear-gradient( 80deg, purple, navy);
+}
+.dropdown p{
+	text-align: center;
+}
+.dropdown-text{
+	display: inline-block;
+}
+.dropdown li{
+	display: none;
+}
+.dropdown:hover li{
+	display: block;
+}
+.col-50{
+	width: 50%;
+}
+.navbar-purple-navy{
+	background-image: linear-gradient( 80deg, purple, navy);
+	color: white;
+	font-family: sans-serif;
+}
