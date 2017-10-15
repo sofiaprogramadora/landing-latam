@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
 
+    <style>
+
+      .center{
+        text-align: center;
+      }
+      .first{
+        width:100%; height:500px; background-image: url(img/bg.jpeg); margin: auto;
+      }
+
+      .navbar{
+        width:100%; margin:auto; background-color: transparent; border-color: transparent;
+      }
+
+      .navbar-brand{
+        height:100px; width : 150px;
+
+      }
+
+      .nav{
+        list-style-type: none;
+      }
+
+      .full{
+        height:100%;
+      }
+
+      footer{
+        width : 100%; background-color: #222222; height:100px;
+      }
+
+      .nav-link-mine{
+        color: #AAAAAA; padding:10px; margin:10px;
+      }
+
+      .center-text{
+        color : #FFFFFF; text-align: center;
+      }
+
+      .bootcamp{
+        padding: 25px; margin:25px; text-align:center; font-weight:bold;
+      }
+
+      .asimplediv{
+        border-top-width:5%; border-top-color:#CCC; border-top-style:solid; height:200px; width:100%; background-color:#EEE; margin:0; padding:0;
+      }
+
+      .a-p{
+        text-align: center; margin:10px; padding:10px;
+      }
+
+      .a-span{
+        display:block; color:#FFFFFF; margin-top: 10px;
+      }
+
+      .o-span{
+        display:block; color:#FFFFFF;
+      }
+
+      .p-img{
+        width : 300px; margin-bottom: -10px;
+      }
+
+      .info-text{
+        text-align: center; font-weight:bold;
+      }
+
+      .pass{
+        text-align: center; font-size: 10px;
+      }
+    </style>
     <!-- Bootstrap -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,17 +89,17 @@
   </head>
   <body>
 
-      <div style = "width:100%; height:500px; background-image: url(img/bg.jpeg); margin: auto;">
-  <nav class="navbar navbar-default" style = "width:100%; margin:auto; background-color: transparent; border-color: transparent;">
+    <div class="first">
+  <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-        <a class="navbar-brand" style = "height:100px; width : 150px;" href="#"><img style = "width 100%; height:100%;" src = "img/latam_logo.png"></a>
+        <a class="navbar-brand" href="#"><img class="full" src = "img/latam_logo.png"></a>
           </div>
-          <div class = "nav navbar-nav navbar-right" style =  "list-style-type: none;">
-          <li><a style = "color: #AAAAAA; padding:10px; margin:10px; " href="#">Equipo</a></li>
-          <li><a style = "color: #AAAAAA; padding:10px; margin:10px; " href="#">Blog</a></li>
-          <li><a style = "color: #AAAAAA; padding:10px; margin:10px; " href="#">Contacto</a></li>
+          <div class = "nav navbar-nav navbar-right">
+          <li><a class="nav-link-mine" href="#">Equipo</a></li>
+          <li><a class="nav-link-mine" href="#">Blog</a></li>
+          <li><a class="nav-link-mine" href="#">Contacto</a></li>
           </div>
         </div>
         </nav>
@@ -66,32 +137,35 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-        <h1 style = "color : #FFFFFF; text-align: center;">COMIENZA UNA NUEVA VIDA Y</h1>
-        <h1 style = "color : #FFFFFF; text-align: center;">ÚNETE AL MUNDO</h1>
-        <h1 style = "color : #FFFFFF; text-align: center;">TECNOLÓGICO</h1>
-        <p style = "text-align: center; margin:10px; padding:10px;">
+        <h1 class="center-text">COMIENZA UNA NUEVA VIDA Y</h1>
+        <h1 class="center-text">ÚNETE AL MUNDO</h1>
+        <h1 class="center-text">TECNOLÓGICO</h1>
+        <p class="a-p">
           <button class = "btn btn-primary">Comienza acá!</button>
             <button class = "btn btn-success">Más Info</button>
-            <span style = "display:block; color:#FFFFFF; margin-top: 10px">Hay una escasez de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan </span>
-            <span style = "display:block; color:#FFFFFF;">más desarrolladores y Tú puedes ser uno!</span>
+            <br>
+            <br>
+            <br>
+            <span class="a-span">Hay una escasez de desarrolladores en el mundo y más aún en Latinoamérica, se necesitan </span>
+            <span class="o-span">más desarrolladores y Tú puedes ser uno!</span>
         </p>
 </div>
 </div>
 <div id = "Second-Class">
-  <h3 style = "padding: 25px; margin:25px; text-align:center; font-weight:bold;">EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h3>
+  <h3 class="bootcamp">EL BOOTCAMP DE PROGRAMACIÓN MÁS GRANDE DE LATINOAMÉRICA</h3>
   <div class="container">
-    <p style = "text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit enim, doloremque sit? Tempore accusantium vel iusto ratione aut architecto pariatur nostrum sint quam eaque, iste aliquid magnam maiores rerum! Magni..</p>
-    <p style = "text-align:center;"><img style = "width : 300px; margin-bottom: -10px;" src="img/people.png" alt=""></p>
+    <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit enim, doloremque sit? Tempore accusantium vel iusto ratione aut architecto pariatur nostrum sint quam eaque, iste aliquid magnam maiores rerum! Magni..</p>
+    <p class="center"><img class="p-img" src="img/people.png" alt=""></p>
   </div>
 </div>
-<div style = "border-top-width:5%; border-top-color:#CCC; border-top-style:solid; height:200px; width:100%; background-color:#EEE; margin:0; padding:0;">
-    <h3 style = "text-align: center; font-weight:bold;">SOLICITE INFORMACION E INSCRIBETE</h3>
-    <p style = "text-align: center; font-size: 10px;">bonJ5xWrHzLlZbKfQw was his password, Arthur was a Lorem ipsum dolor sit amet,</p>
-    <p style = "text-align: center; font-size: 10px;">consectetur adipisicing elit. Facere nisi id alias delectus aliquam, dolorem quidem explicabo quisquam qui nesciunt dolores quos quis quaerat voluptatibus totam distinctio? Ullam, suscipit officiis.</p>
-    <p  style = "text-align: center;"><button class ="btn btn-primary">Inscribete!!!</button></p>
-    <p  style = "text-align: center;">Vive la experiencia Desafio Latam!</p>
+<div class="asimplediv">
+    <h3 class="info-text">SOLICITE INFORMACION E INSCRIBETE</h3>
+    <p class="pass">bonJ5xWrHzLlZbKfQw was his password, Arthur was a Lorem ipsum dolor sit amet,</p>
+    <p class="pass">consectetur adipisicing elit. Facere nisi id alias delectus aliquam, dolorem quidem explicabo quisquam qui nesciunt dolores quos quis quaerat voluptatibus totam distinctio? Ullam, suscipit officiis.</p>
+    <p  class="center"><button class ="btn btn-primary">Inscribete!!!</button></p>
+    <p  class="center">Vive la experiencia Desafio Latam!</p>
 </div>
-<div class="LastLayer" style = "text-align: center;"><form class="form-inline">
+<div class="LastLayer center"><form class="form-inline">
   <div class="form-group">
     <label for="exampleInputName2">Name</label>
     <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
@@ -102,10 +176,9 @@
   </div>
   <button type="submit" class="btn btn-default">Send invitation</button>
 </form></div>
-<footer style = "width : 100%; background-color: #222222; height:100px;">
+<footer>
     <h3>DESAFIO LATAM 2016 - </h3>
 </footer>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://code.jquery.com/jquery-1.11.3.js" integrity="sha256-IGWuzKD7mwVnNY01LtXxq3L84Tm/RJtNCYBfXZw3Je0=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
